@@ -86,6 +86,6 @@ Next we will look at DHCP traffic. This is the protocol that automatically assig
 <p>
 <h2>5. Observing DNS Traffic</h2>
 
-Now we will observe DNS traffic. DNS is the protocol that takes human readable names like "google.com" and converts them into IP addresses so your computer knows where to route. We can generate some traffic in Powershell again using "nslookup google.com" command. Once entered we can see all the information our computer received about the domain google.com, as well as some IP addresses of google servers. 
+Finally, we will observe DNS traffic. DNS is the protocol that takes human readable names like "google.com" and converts them into IP addresses so your computer knows where to route. We can generate some traffic in Powershell again using "nslookup google.com" command. Once entered we can see all the information our computer received about the domain google.com, as well as some IP addresses of google servers. 
 </p>
 <br />
