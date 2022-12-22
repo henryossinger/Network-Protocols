@@ -74,7 +74,7 @@ Next, we will SSH login to the Ubuntu server and observe the traffic wireshark s
 <img src="https://imgur.com/XiQVYD5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<h2>6. Observing DHCP Traffic</h2>
+<h2>5. Observing DHCP Traffic</h2>
 
 Next we will look at DHCP traffic. This is the protocol that automatically assigns device's and IP address so they don't have to be manually configured. We can force some of this traffic by forcing a DHCP renewal of our IP address. We type ipconfig /renew in powershell to perform this action. Once entered we see a DHCPREQUEST and DHCPACK packets. 
 </p>
