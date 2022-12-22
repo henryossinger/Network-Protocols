@@ -69,3 +69,13 @@ Now that we have wireshark, let's observe some protocols in action. In windows p
 Next, we will SSH login to the Ubuntu server and observe the traffic wireshark shows us. We do this in Powershell by typing "ssh (username)@(VM's IP)". Immediately after we type this we see Elliptic Curve Deffie-Hellman Key traffic. This is a protocol that establishes a shared secret connection channel between two devices. Next we input the password for the Ubuntu VM, and we are fully logged in. You will now see that the command line changes color and is using bash (linux commands). Anything we type in the terminal will be shown on wireshark. 
 </p>
 <br />
+
+<p>
+<img src="https://imgur.com/XiQVYD5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<h2>6. Observing DHCP Traffic</h2>
+
+Next we will look at DHCP traffic. This is the protocol that automatically assigns device's and IP address so they don't have to be manually configured. We can force some of this traffic by forcing a DHCP renewal of our IP address. We type ipconfig /renew in powershell to perform this action. Once entered we see a DHCPREQUEST and DHCPACK packets. 
+</p>
+<br />
