@@ -58,3 +58,14 @@ Since my VM is in Azure, wireshark is automatically running tons of traffic.
 Now that we have wireshark, let's observe some protocols in action. In windows powershell I ping the IP address of our Ubuntu server and observe what wireshark captures. In the filters on the top of wireshark, you can enter icmp or port == 3389. We do this so wireshark only shows us traffic from our pings. Now we can see in wireshark echo requests are being sent from our IP address (Source IP), and echo replies are coming back from the Ubuntu server (Destination IP). 
 </p>
 <br />
+
+<p>
+<img src="https://imgur.com/NzCt6j8.png" height="80%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/90QcF9e.png" height="80%" width="40%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<h2>4. Observing SSH Traffic</h2>
+
+Next, we will SSH login to the Ubuntu server and observe the traffic wireshark shows us. We do this in Powershell by typing "ssh (username)@(VM's IP)". Immediately after we type this we see Elliptic Curve Deffie-Hellman Key traffic. This is a protocol that establishes a shared secret connection channel between two devices. Next we input the password for the Ubuntu VM, and we are fully logged in. You will now see that the command line changes color and is using bash (linux commands). Anything we type in the terminal will be shown on wireshark. 
+</p>
+<br />
