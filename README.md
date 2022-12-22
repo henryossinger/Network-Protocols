@@ -50,7 +50,7 @@ Since my VM is in Azure, wireshark is automatically running tons of traffic.
 <br />
 
 <p>
-<img src="https://imgur.com/sKdVT5i.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/KHXBCsY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <h2>3. Observing ICMP Traffic</h2>
