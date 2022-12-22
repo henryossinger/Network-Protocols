@@ -50,9 +50,11 @@ Since my VM is in Azure, wireshark is automatically running tons of traffic.
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/sKdVT5i.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<h2>3. Observing ICMP Traffic</h2>
+
+Now that we have wireshark, let's observe some protocols in action. In windows powershell I ping the IP address of our Ubuntu server and observe what wireshark captures. In the filters on the top of wireshark, you can enter icmp or port == 3389. We do this so wireshark only shows us traffic from our pings. Now we can see in wireshark echo requests are being sent from our IP address (Source IP), and echo replies are coming back from the Ubuntu server (Destination IP). 
 </p>
 <br />
