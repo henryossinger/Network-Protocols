@@ -79,3 +79,13 @@ Next, we will SSH login to the Ubuntu server and observe the traffic wireshark s
 Next we will look at DHCP traffic. This is the protocol that automatically assigns device's an IP address so they don't have to be manually configured. We can force some of this traffic by forcing a DHCP renewal of our IP address. We type ipconfig /renew in powershell to perform this action. Once entered we see a DHCPREQUEST and DHCPACK packets. 
 </p>
 <br />
+
+<p>
+<img src="https://imgur.com/sF43sQ0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<h2>5. Observing DNS Traffic</h2>
+
+Now we will observe DNS traffic. DNS is the protocol that takes human readable names like "google.com" and converts them into IP addresses so your computer knows where to route. We can generate some traffic in Powershell again using "nslookup google.com" command. Once entered we can see all the information our computer received about the domain google.com, as well as some IP addresses of google servers. 
+</p>
+<br />
